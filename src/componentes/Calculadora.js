@@ -61,7 +61,7 @@ export default function Calculadora() {
         <Box m={5}/>
         <Container maxWidth='xs'>
         <div className="wrapper">
-        <Box m={12}/>
+        <Box m={5}/>
                 <h1 className="result">{num}</h1>
             <button onClick={clear}>AC</button>
             <button onClick={changeSign}>+/-</button>
