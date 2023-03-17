@@ -12,6 +12,25 @@ button:hover{
 }
 
 .wrapper{
-    background-color: black;
+    background-color: rgb(121, 107, 117);
     border-radius: 1em;
+    padding: 1em;
+}
+
+.orange{
+    background-color: #ff9500;
+    color: white;
+}
+
+.gray{
+    background-color: #505050;
+    color: white;
+}
+
+.result{
+    color: white;
+    display: flex;
+    justify-content: right;
+    margin-right: 1em;
+    font-size: 3.5em;
 }
