@@ -81,7 +81,7 @@ export default function Calculadora() {
             <button className="orange" onClick={operatorHandler} value='+'>+</button>
             <button className='gray'onClick={inputNum}value={0}>0</button>
             <button className='gray' onClick={inputNum}value={'.'}>,</button>
-            <button className='gray' style={{visibility: 'hidden'}}>,</button>
+            <button className='gray' style={{visibility: 'hidden'}}>nada</button>
             <button className='orange'onClick={calculate}>=</button>
 
         </div>
