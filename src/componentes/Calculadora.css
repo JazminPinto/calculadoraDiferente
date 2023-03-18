@@ -9,14 +9,23 @@ button{
 
 button:hover{
     cursor: pointer;
+    transform: scale(1.1);
+}
+
+button#equal{
+    height: 130px;
 }
 
 .wrapper{
-    background-color: rgb(121, 107, 117);
+    background-image: linear-gradient(to bottom right, rgba(79,51,176,1), rgba(210,53,165));
     border-radius: 1em;
     padding: 1em;
 }
 
+.blue{
+    background-color: royalblue;
+    color: white
+}
 .orange{
     background-color: #ff9500;
     color: white;
@@ -33,4 +42,92 @@ button:hover{
     justify-content: right;
     margin: 0 0.5em 0 0.5em;
     font-size: 3.5em;
+}
+
+.theme-toggler{ /*es el punto blanco encima*/
+    position: relative;
+    left: 140px;
+    color: #fff;
+    cursor:pointer;
+    z-index: 1;
+}
+
+.theme-toggler.active{
+    color: #333;
+}
+
+.theme-toggler.active::before{
+    background-color: #fff;
+}
+
+.theme-toggler::before{
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top:50%;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    background-color: #333;
+    z-index: -1;
+}
+
+#display{
+    margin: 0 10px;
+    height:  150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+}
+#display::-webkit-scrollbar{
+    display: block;
+    height: 3px;
+}
+.
+
+/* light theme*/
+
+.calculador{
+    background-color: #fff;
+}
+.calculador #display{
+    color: #0a1e23;
+}
+
+.calculador .blue{
+    background-color: #ffd0fd;
+    color:#f967f3;   
+}
+.calculador .orange{
+    background-color: #ffd5d8;
+    color: #fc4552;
+}
+.calculador .gray{
+    background-color: #c3eaff;
+    color: #000;
+}
+
+/*dark theme*/
+.calculador.dark{
+    background-color: #071115;
+}
+.calculador.dark #display{
+    color: #f8fafd;
+}
+.calculador.dark .blue{
+    background-color: #2b1e64;
+    color:#392fec;   
+}
+.calculador.dark .orange{
+    background-color: #1b2f38;
+    color: #f8fafb;
+}
+.calculador.dark .gray{
+    background-color: #2e1f39;
+    color: #aa00a4;
 }
